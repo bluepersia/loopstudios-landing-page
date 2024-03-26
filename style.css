@@ -77,8 +77,13 @@ h3 {
     text-decoration: none;
     position: relative;
 }
+.social_item {
+    position: relative;
+    cursor: pointer;
+}
 
-.navlink::after
+
+.navlink::after, .social_item::after
 {
     content: '';
     position: absolute;
@@ -90,7 +95,8 @@ h3 {
     transition: width 300ms;
 }
 
-.navlink:hover::after {
+
+.navlink:hover::after, .social_item:hover::after {
     width: 100%;
 }
 
