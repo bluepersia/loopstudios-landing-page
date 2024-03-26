@@ -2,6 +2,8 @@
 {
     --color-1: hsl(0,0%, 100%);
     --color-2:  hsl(0,0%,0%);
+
+    --font-josefin: "Josefin Sans", sans-serif;
 }
 
 html {
@@ -24,7 +26,7 @@ p {
 }
 
 h1, h2, h3 {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: var(--font-josefin);
     text-transform: uppercase;
 }
 
@@ -92,6 +94,70 @@ h3 {
     width: 100%;
 }
 
+
+.btn-menu {
+    cursor: pointer;
+    transition: transform 300ms;
+}
+
+.btn-menu:hover {
+    transform: scale(1.2);
+}
+.menu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-2);
+    padding: 2.66em 6.4%;
+    pointer-events: none;
+    opacity: 0%;
+    transform: translateX(100%);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.menu.open {
+    opacity: 100%;
+    transform: translateX(0%);
+    pointer-events: all;
+}
+
+.menu_top 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10.6em;
+}
+.menu_logo 
+{
+    width: 38.4%;
+    max-width: 144px;
+}
+.menu_btn-close {
+    cursor: pointer;
+    transition: transform 300ms;
+}
+
+.menu_btn-close:hover {
+    transform: scale(1.2);
+}
+
+.menu_navlist {
+    list-style: none;
+    padding-left: 0;
+}
+.menu_navitem {
+    margin-bottom: 1.6em;
+}
+.menu_navlink {
+    color: var(--color-1);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: var(--font-josefin);
+}
 
 
 .header {
