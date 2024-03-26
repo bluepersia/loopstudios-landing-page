@@ -1,0 +1,61 @@
+:root 
+{
+    --color-1: hsl(0,0%, 100%);
+    --color-2:  hsl(0,0%,0%);
+}
+
+html {
+    font-size: 15px;
+}
+
+
+body {
+    font-family: "Alata", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+p {
+    line-height: 1.66;
+}
+
+h1, h2, h3 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+h1 {
+    font-size: 4.8rem;
+    line-height: 0.972;
+}
+h2 {
+    font-size: 3.2rem;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 2.13rem;
+    line-height: 1;
+}
+
+
+
+.btn 
+{
+    font-size: .93rem;
+    font-family: inherit;
+    padding: .86em 2.53em;
+    border:solid 1px var(--color-2);
+    text-transform: uppercase;
+    letter-spacing: .35em;
+    background-color: transparent;
+    transition: background-color 300ms, color 300ms;
+}
+
+.btn:hover 
+{
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
